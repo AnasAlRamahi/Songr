@@ -20,8 +20,14 @@
     <p>Artist: <span th:text="${album.artist}"></span></p>
     <p>Song Count: <span th:text="${album.songCount}"></span></p>
     <p>Length(in seconds): <span th:text="${album.length}"></span></p>
+    <p>Id: <span th:text="${album.id}"></span></p>
     <img th:src="${album.imageUrl}" alt="">
+    <br>
+    <a th:href="@{/album/{id}(id=${album.id})}">display</a>
+
 </div>
+
+
 
 </body>
 </html>
